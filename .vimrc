@@ -45,3 +45,8 @@ set ffs=unix,dos,mac
 set incsearch
 " Highlight search matches
 set hlsearch
+
+" Set autocomplete for HTML code
+" Can be used with Ctrl+x followed by Ctrl+o
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
