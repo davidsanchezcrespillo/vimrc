@@ -1,3 +1,22 @@
+" Vundle configuration
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+" List of plugins currently installed
+Plugin 'Townk/vim-autoclose'
+Plugin 'vim-scripts/closetag.vim'
+
+" End list of the plugins
+call vundle#end()
+filetype plugin indent on
+'
 " Enable syntax highlighting
 syntax enable
 

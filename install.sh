@@ -4,32 +4,14 @@
 cp ~/.vimrc ~/.vimrc.old
 cp ./.vimrc ~/.vimrc
 
-# Create the directory structure
-if [ ! -d ~/.vim ]
+# Install Vundle
+if [ ! -d ~/.vim/bundle ]
 then
-  mkdir ~/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-if [ ! -d ~/.vim/plugin ]
-then
-  mkdir ~/.vim/plugin
-fi
-
-if [ ! -d ~/.vim/doc ]
-then
-  mkdir ~/.vim/doc
-fi
-
-# Install vim-autoclose
-git clone https://github.com/Townk/vim-autoclose
-cp vim-autoclose/plugin/* ~/.vim/plugin
-cp vim-autoclose/doc/* ~/.vim/doc
-rm -rf vim-autoclose
-
-# Install closetag
-git clone https://github.com/vim-scripts/closetag.vim
-cp closetag.vim/plugin/* ~/.vim/plugin
-rm -rf closetag.vim
+# Install plugins
+vim +PluginInstall +qall
 
 echo Done.
 
