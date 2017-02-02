@@ -11,7 +11,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " List of plugins currently installed
 Plugin 'Townk/vim-autoclose'
-Plugin 'vim-scripts/closetag.vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'https://git.drupal.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
+Plugin 'scrooloose/nerdtree'
 
 " End list of the plugins
 call vundle#end()
