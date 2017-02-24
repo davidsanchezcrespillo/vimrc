@@ -13,7 +13,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'alvan/vim-closetag'
 Plugin 'https://git.drupal.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
-Plugin 'scrooloose/nerdtree'
 
 " End list of the plugins
 call vundle#end()

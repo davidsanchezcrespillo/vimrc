@@ -12,6 +12,7 @@ fi
 
 # Install plugins
 vim +PluginInstall +qall
+vim +PluginUpdate
 
 echo Done.
 
